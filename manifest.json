@@ -1,0 +1,18 @@
+{
+"manifest_version": 2,
+    "name": "Paul Simulator",
+    "description": "After a disagreement with Paul, I made this Chrome plugin.",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "verbs.js",
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
